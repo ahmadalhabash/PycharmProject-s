@@ -1,4 +1,4 @@
-class moneey():
+class heirs():
     def __float__(self, money):
         self.money = money
         bank = self.money[1]
@@ -128,8 +128,8 @@ print("\n")
 print("peron money:")
 print("...................")
 
-your = moneey(family)
-your.calculate_The_person_share_of_the_heirs()
+your_heirs = heirs(family)
+your_heirs.calculate_The_person_share_of_the_heirs()
 
 ff = money_account[1] - (jj[0] + jj[1] + jj[2] + jj[3] + jj[4] + jj[5] + jj[6] + jj[7] + jj[8] + jj[9] + jj[10] + jj[11])
 
