@@ -16,13 +16,10 @@ class moneey():
 
     def calculate_The_person_share_of_the_heirs(self):
 
-        if "0" in family or "1" in family or "2" in family or "3" in family 
-        or "4" in family or "5" in family or "6" in family or "7" in family 
-        or "8" in family or "9" in family or "!" in family or "@" in family 
-        or "#" in family or "%" in family or "^" in family or "&" in family 
-        or"*" in family or "(" in family or ")" in family or "_" in family 
-        or "+" in family or "-" in family or "=" in family or "~" in family or "`" in family or "" in family  :
-            Lie_detector[0] = 0
+          if "0" in family or "1" in family or "2" in family or "3" in family or "4" in family or "5" in family or "6" in family or "7" in family \
+                or "8" in family or "9" in family or "!" in family or "@" in family or "#" in family or "%" in family or "^" in family \
+                or "&" in family or"*" in family or "(" in family or ")" in family or "_" in family or "+" in family or "-" in family \
+                or "=" in family or "~" in family or "`" in family or "" in family  :
             print("PLEASE WRITE THE NAME")
 
         else:
