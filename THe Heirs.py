@@ -1,4 +1,4 @@
-class moneey():
+class heirs():
     def __float__(self, money):
         self.money = money
         bank = self.money[1]
@@ -16,10 +16,11 @@ class moneey():
 
     def calculate_The_person_share_of_the_heirs(self):
 
-          if "0" in family or "1" in family or "2" in family or "3" in family or "4" in family or "5" in family or "6" in family or "7" in family \
+        if "0" in family or "1" in family or "2" in family or "3" in family or "4" in family or "5" in family or "6" in family or "7" in family \
                 or "8" in family or "9" in family or "!" in family or "@" in family or "#" in family or "%" in family or "^" in family \
                 or "&" in family or"*" in family or "(" in family or ")" in family or "_" in family or "+" in family or "-" in family \
                 or "=" in family or "~" in family or "`" in family or "" in family  :
+            Lie_detector[0] = 0
             print("PLEASE WRITE THE NAME")
 
         else:
@@ -127,8 +128,8 @@ print("\n")
 print("peron money:")
 print("...................")
 
-your = moneey(family)
-your.calculate_The_person_share_of_the_heirs()
+your_heirs = heirs(family)
+your_heirs.calculate_The_person_share_of_the_heirs()
 
 ff = money_account[1] - (jj[0] + jj[1] + jj[2] + jj[3] + jj[4] + jj[5] + jj[6] + jj[7] + jj[8] + jj[9] + jj[10] + jj[11])
 
