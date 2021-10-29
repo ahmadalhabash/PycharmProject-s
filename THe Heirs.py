@@ -18,8 +18,8 @@ class heirs():
 
         if "0" in family or "1" in family or "2" in family or "3" in family or "4" in family or "5" in family or "6" in family or "7" in family \
                 or "8" in family or "9" in family or "!" in family or "@" in family or "#" in family or "%" in family or "^" in family \
-                or "&" in family or"*" in family or "(" in family or ")" in family or "_" in family or "+" in family or "-" in family \
-                or "=" in family or "~" in family or "`" in family or "" in family  :
+                or "&" in family or "*" in family or "(" in family or ")" in family or "_" in family or "+" in family or "-" in family \
+                or "=" in family or "~" in family or "`" in family or "" in family:
             Lie_detector[0] = 0
             print("PLEASE WRITE THE NAME")
 
@@ -85,14 +85,13 @@ money_account = [print("Write the amount of the heirs :"), float(input()), print
                  print("Write how many females :"), float(input())]
 
 # jj Values
-dad = float() # [0]
-mam = float() # [1]
-wife1 = float() # [2]
-wife2 =float()# [3]
-wife3 = float() # [4]
-wife4 = float()# [5]
-jj = [float(dad) ,  float(mam),  float(wife1),  float(wife2), float(wife3),float(wife4)]
-
+dad = float()  # [0]
+mam = float()  # [1]
+wife1 = float()  # [2]
+wife2 = float()  # [3]
+wife3 = float()  # [4]
+wife4 = float()  # [5]
+jj = [float(dad), float(mam), float(wife1), float(wife2), float(wife3), float(wife4)]
 
 print("...............")
 
@@ -111,23 +110,22 @@ print("...................")
 
 your_heirs = heirs(family)
 your_heirs.calculate_The_person_share_of_the_heirs()
+ff = money_account[1] - (jj[0] + jj[1] + jj[2] + jj[3] + jj[4] + jj[5])
 
-ff = money_account[1] - (jj[0]  + jj[1] +  jj[2]  + jj[3] +  jj[4] +  jj[5])
 
-class sons:
-    def sos(self):
+class son_daughter:
+    def calculate_The_son_and_daughter_share_of_the_heirs(self):
         s = son * 2
         d = daughter
         gg = ff
 
-        if Lie_detector[0] == 0 :
-         pass
+        if Lie_detector[0] == 0:
+            pass
         else:
 
             if s == 0 and d == 0:
                 print("The bouns of the heirs :")
                 print(gg)
-
 
             if s > 0 or d > 0:
                 c = s + d
@@ -144,11 +142,11 @@ class sons:
                     print(daughter1)
                     print("..............")
             else:
-              pass
+                pass
 
 
 son = money_account[4]
 daughter = money_account[7]
 
-ss = sons()
-ss.sos()
+ss = son_daughter()
+ss.calculate_The_son_and_daughter_share_of_the_heirs()
