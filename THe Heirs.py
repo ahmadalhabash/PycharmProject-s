@@ -25,57 +25,57 @@ class heirs():
 
         else:
             if "pass" in self.person[1]:
-                The_share_of_the_heirs_per_person[0] = 0
+                the_share_of_the_heirs_per_person[0] = 0
 
             else:
                 print(self.person[1] + " (Father) money :")
                 print(20 / 100 * money_account[1])
                 print("....................")
-                The_share_of_the_heirs_per_person[0] = 20 / 100 * money_account[1]
+                the_share_of_the_heirs_per_person[0] = 20 / 100 * money_account[1]
 
             if "pass" in self.person[3]:
-                The_share_of_the_heirs_per_person[1] = 0
+                the_share_of_the_heirs_per_person[1] = 0
 
             else:
                 print(self.person[3] + " (Mother) money :")
                 print(10 / 100 * money_account[1])
                 print("....................")
-                The_share_of_the_heirs_per_person[1] = 10 / 100 * money_account[1]
+                the_share_of_the_heirs_per_person[1] = 10 / 100 * money_account[1]
 
             if "pass" in self.person[5]:
-                The_share_of_the_heirs_per_person[2] = 0
+                the_share_of_the_heirs_per_person[2] = 0
 
             else:
                 print(self.person[5] + " (First Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                The_share_of_the_heirs_per_person[2] = 5 / 100 * money_account[1]
+                the_share_of_the_heirs_per_person[2] = 5 / 100 * money_account[1]
 
             if "pass" in self.person[7]:
-                The_share_of_the_heirs_per_person[3] = 0
+                the_share_of_the_heirs_per_person[3] = 0
 
             else:
                 print(self.person[7] + " (Second Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                The_share_of_the_heirs_per_person[3] = 5 / 100 * money_account[1]
+                the_share_of_the_heirs_per_person[3] = 5 / 100 * money_account[1]
 
             if "pass" in self.person[9]:
-                The_share_of_the_heirs_per_person[4] = 0
+                the_share_of_the_heirs_per_person[4] = 0
 
             else:
                 print(self.person[9] + " (Third Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                The_share_of_the_heirs_per_person[4] = 5 / 100 * money_account[1]
+                the_share_of_the_heirs_per_person[4] = 5 / 100 * money_account[1]
 
             if "pass" in self.person[11]:
-                The_share_of_the_heirs_per_person[5] = 0
+                the_share_of_the_heirs_per_person[5] = 0
             else:
-                print(self.person[11] + "(Third Wife) money :")
+                print(self.person[11] + "(Forth Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                The_share_of_the_heirs_per_person[5] = 5 / 100 * money_account[1]
+                the_share_of_the_heirs_per_person[5] = 5 / 100 * money_account[1]
 
 
 Lie_detector = [None]
@@ -91,7 +91,7 @@ wife1 = float()  # [2]
 wife2 = float()  # [3]
 wife3 = float()  # [4]
 wife4 = float()  # [5]
-The_share_of_the_heirs_per_person = [float(dad), float(mam), float(wife1), float(wife2), float(wife3), float(wife4)]
+the_share_of_the_heirs_per_person = [float(dad), float(mam), float(wife1), float(wife2), float(wife3), float(wife4)]
 
 print("...............")
 
@@ -110,7 +110,7 @@ print("...................")
 
 your_heirs = heirs(family)
 your_heirs.calculate_The_person_share_of_the_heirs()
-the_remainder_of_the_heirs_after_calculating_the_individual_s_share = money_account[1] - (The_share_of_the_heirs_per_person[0] + The_share_of_the_heirs_per_person[1] + The_share_of_the_heirs_per_person[2] + The_share_of_the_heirs_per_person[3] + The_share_of_the_heirs_per_person[4] + The_share_of_the_heirs_per_person[5])
+the_remainder_of_the_heirs_after_calculating_the_individual_s_share = money_account[1] - (the_share_of_the_heirs_per_person[0] + the_share_of_the_heirs_per_person[1] + the_share_of_the_heirs_per_person[2] + the_share_of_the_heirs_per_person[3] + the_share_of_the_heirs_per_person[4] + the_share_of_the_heirs_per_person[5])
 
 class son_daughter:
     def calculate_The_son_and_daughter_share_of_the_heirs(self):
