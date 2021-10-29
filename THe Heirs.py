@@ -110,7 +110,8 @@ print("...................")
 
 your_heirs = heirs(family)
 your_heirs.calculate_The_person_share_of_the_heirs()
-the_remainder_of_the_heirs_after_calculating_the_individual_s_share = money_account[1] - (the_share_of_the_heirs_per_person[0] + the_share_of_the_heirs_per_person[1] + the_share_of_the_heirs_per_person[2] + the_share_of_the_heirs_per_person[3] + the_share_of_the_heirs_per_person[4] + the_share_of_the_heirs_per_person[5])
+the_remainder_of_the_heirs_after_calculating_the_individual_s_share = money_account[1] - (the_share_of_the_heirs_per_person[0] + the_share_of_the_heirs_per_person[1] + the_share_of_the_heirs_per_person[2]
+                                                                                          + the_share_of_the_heirs_per_person[3] + the_share_of_the_heirs_per_person[4] + the_share_of_the_heirs_per_person[5])
 
 class son_daughter:
     def calculate_The_son_and_daughter_share_of_the_heirs(self):
