@@ -1,4 +1,4 @@
-class moneey():
+class heirs():
     def __float__(self, money):
         self.money = money
         bank = self.money[1]
@@ -16,75 +16,66 @@ class moneey():
 
     def calculate_The_person_share_of_the_heirs(self):
 
-        if "0" in family or "1" in family or "2" in family or "3" in family or "4" in family or "5" in family or "6" in family or "7" in family or "8" in family or "9" in family or "!" in family or "@" in family or "#" in family or "%" in family or "^" in family or "&" in family or"*" in family or "(" in family or ")" in family or "_" in family or "+" in family or "-" in family or "=" in family or "~" in family or "`" in family or "/" in family  :
+        if "0" in family or "1" in family or "2" in family or "3" in family or "4" in family or "5" in family or "6" in family or "7" in family \
+                or "8" in family or "9" in family or "!" in family or "@" in family or "#" in family or "%" in family or "^" in family \
+                or "&" in family or"*" in family or "(" in family or ")" in family or "_" in family or "+" in family or "-" in family \
+                or "=" in family or "~" in family or "`" in family or "" in family  :
             Lie_detector[0] = 0
             print("PLEASE WRITE THE NAME")
 
         else:
             if "pass" in self.person[1]:
                 jj[0] = 0
-                jj[1] = 0
 
             else:
                 print(self.person[1] + " (Father) money :")
                 print(20 / 100 * money_account[1])
                 print("....................")
                 jj[0] = 20 / 100 * money_account[1]
-                jj[1] = 0
 
             if "pass" in self.person[3]:
-                jj[2] = 0
-                jj[3] = 0
+                jj[1] = 0
 
             else:
                 print(self.person[3] + " (Mother) money :")
                 print(10 / 100 * money_account[1])
                 print("....................")
-                jj[2] = 0
-                jj[3] = 10 / 100 * money_account[1]
+                jj[1] = 10 / 100 * money_account[1]
 
             if "pass" in self.person[5]:
-                jj[4] = 0
-                jj[5] = 0
+                jj[2] = 0
 
             else:
                 print(self.person[5] + " (First Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                jj[4] = 0
-                jj[5] = 5 / 100 * money_account[1]
+                jj[2] = 5 / 100 * money_account[1]
 
             if "pass" in self.person[7]:
-                jj[6] = 0
-                jj[7] = 0
+                jj[3] = 0
 
             else:
                 print(self.person[7] + " (Second Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                jj[6] = 0
-                jj[7] = 5 / 100 * money_account[1]
+                jj[3] = 5 / 100 * money_account[1]
 
             if "pass" in self.person[9]:
-                jj[8] = 0
-                jj[9] = 0
+                jj[4] = 0
 
             else:
                 print(self.person[9] + " (Third Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                jj[8] = 0
-                jj[9] = 5 / 100 * money_account[1]
+                jj[4] = 5 / 100 * money_account[1]
 
             if "pass" in self.person[11]:
-                jj[10] = 0
-                jj[11] = 0
+                jj[5] = 0
             else:
                 print(self.person[11] + "(Third Wife) money :")
                 print(5 / 100 * money_account[1])
                 print("....................")
-                jj[10] = 0
-                jj[11] = 5 / 100 * money_account[1]
+                jj[5] = 5 / 100 * money_account[1]
 
 
 Lie_detector = [None]
@@ -95,19 +86,12 @@ money_account = [print("Write the amount of the heirs :"), float(input()), print
 
 # jj Values
 dad = float() # [0]
-dad_not_here =float() # [1]
-mam_not_Here = float() # [2]
-mam = float() # [3]
-wife1_not_here = float()# [4]
-wife1 = float() # [5]
-wife2_not_here = float()# [6]
-wife2 =float()# [7]
-wife3_not_here =float() # [8]
-wife3 = float() # [9]
-wife4_not_here =float()# [10]
-wife4 = float()# [11]
-jj = [float(dad) , float(dad_not_here), float(mam_not_Here), float(mam), float(wife1_not_here), float(wife1), float(wife2_not_here), float(wife2), float(wife3_not_here), float(wife3),
-      float(wife4_not_here), float(wife4)]
+mam = float() # [1]
+wife1 = float() # [2]
+wife2 =float()# [3]
+wife3 = float() # [4]
+wife4 = float()# [5]
+jj = [float(dad) ,  float(mam),  float(wife1),  float(wife2), float(wife3),float(wife4)]
 
 
 print("...............")
@@ -125,12 +109,12 @@ print("\n")
 print("peron money:")
 print("...................")
 
-your = moneey(family)
-your.calculate_The_person_share_of_the_heirs()
+your_heirs = heirs(family)
+your_heirs.calculate_The_person_share_of_the_heirs()
 
-ff = money_account[1] - (jj[0] + jj[1] + jj[2] + jj[3] + jj[4] + jj[5] + jj[6] + jj[7] + jj[8] + jj[9] + jj[10] + jj[11])
+ff = money_account[1] - (jj[0]  + jj[1] +  jj[2]  + jj[3] +  jj[4] +  jj[5])
 
-class sons:
+class sons_daughter:
     def sos(self):
         s = son * 2
         d = daughter
@@ -166,5 +150,5 @@ class sons:
 son = money_account[4]
 daughter = money_account[7]
 
-ss = sons()
+ss = sons_daughter()
 ss.sos()
