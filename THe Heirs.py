@@ -110,14 +110,12 @@ print("...................")
 
 your_heirs = heirs(family)
 your_heirs.calculate_The_person_share_of_the_heirs()
-ff = money_account[1] - (The_share_of_the_heirs_per_person[0] + The_share_of_the_heirs_per_person[1] + The_share_of_the_heirs_per_person[2] + The_share_of_the_heirs_per_person[3] + The_share_of_the_heirs_per_person[4] + The_share_of_the_heirs_per_person[5])
-
+the_remainder_of_the_heirs_after_calculating_the_individual_s_share = money_account[1] - (The_share_of_the_heirs_per_person[0] + The_share_of_the_heirs_per_person[1] + The_share_of_the_heirs_per_person[2] + The_share_of_the_heirs_per_person[3] + The_share_of_the_heirs_per_person[4] + The_share_of_the_heirs_per_person[5])
 
 class son_daughter:
     def calculate_The_son_and_daughter_share_of_the_heirs(self):
         s = son * 2
         d = daughter
-        gg = ff
 
         if Lie_detector[0] == 0:
             pass
@@ -125,11 +123,11 @@ class son_daughter:
 
             if s == 0 and d == 0:
                 print("The bouns of the heirs :")
-                print(gg)
+                print(the_remainder_of_the_heirs_after_calculating_the_individual_s_share)
 
             if s > 0 or d > 0:
                 c = s + d
-                x = ff / c
+                x = the_remainder_of_the_heirs_after_calculating_the_individual_s_share / c
                 son1 = x * 2
                 daughter1 = x
                 if s > 0:
