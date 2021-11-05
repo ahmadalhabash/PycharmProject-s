@@ -68,7 +68,7 @@ the_share_of_the_heirs_per_person = [float(dad), float(mam), float(wif)]
 
 print("...............")
 
-family = (print("Write the name of the father. If the father is not existent , write pass :"), input(),print("Write the name of the mother. If the mother is not existent , write pass:"), input())
+family = (print("Write the name of the father. If the father is not existent ,pass :"), input(),print("Write the name of the mother. If the mother is not existent ,pass:"), input())
 
 print("\n")
 
