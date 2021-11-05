@@ -44,6 +44,9 @@ class heirs():
 
 
     def calculate_The_wife_share_of_the_heirs(self):
+      if Lie_detector[0] == 0:
+        pass
+      else:
         if money_account[10] >4 or money_account[10] <0 or money_account[10] == 0:
             the_share_of_the_heirs_per_person[2] = 0
         else:
@@ -59,7 +62,7 @@ Lie_detector = [None]
 
 money_account = [print("Write the amount of the heirs :"), float(input()), print(".............."),
                  print("Write how many males :"), float(input()), print("..............."),
-                 print("Write how many females :"), float(input()) ,print("..............."), 
+                 print("Write how many females :"), float(input()) ,print("..............."),
                  print("Write how many wifes :"), float(input())]
 
 # jj Values
